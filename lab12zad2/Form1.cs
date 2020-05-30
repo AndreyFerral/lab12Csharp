@@ -259,5 +259,10 @@ namespace Lab12_2_
 		{
 
 		}
+
+		private void groupBox5_Enter(object sender, EventArgs e)
+		{
+
+		}
 	}
 }

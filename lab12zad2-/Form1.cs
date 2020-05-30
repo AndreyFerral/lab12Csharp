@@ -184,7 +184,7 @@ namespace lab12zad2_
                         return 0;
                     });
                 }
-                else throw new Exception("Вы не выбрали один/два критерия для сортировки"); ;
+                else throw new Exception("Вы не выбрали критерий/и для сортировки");
             }
             catch (Exception ex) { MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error); }
         }
@@ -227,7 +227,6 @@ namespace lab12zad2_
                         elem.znak = "";
 
                         while (streamReader.Peek() != ' ') elem.fam += Convert.ToChar(streamReader.Read());
-                        //streamReader.Read();
                         elem.fam += Convert.ToChar(streamReader.Read()); // фио
                         while (streamReader.Peek() != ' ') elem.fam += Convert.ToChar(streamReader.Read());
                         streamReader.Read();
@@ -247,13 +246,14 @@ namespace lab12zad2_
                     streamReader.Close();
                     MessageBox.Show("Данные успешно считаны!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
-                else
+                else if (radioButton7.Checked)
                 {
                     StreamWriter streamWriter = new StreamWriter(textBox12.Text);
                     foreach (ZNAK elem in znak) streamWriter.WriteLine(elem.GetDataTXT());
                     streamWriter.Close();
                     MessageBox.Show("Данные успешно записаны!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
+                else throw new Exception("Выберите действие");
             }
             catch (Exception ex) { MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error); }
         }
@@ -336,6 +336,11 @@ namespace lab12zad2_
         }
 
         private void radioButton12_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radioButton7_CheckedChanged(object sender, EventArgs e)
         {
 
         }

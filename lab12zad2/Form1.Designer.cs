@@ -77,6 +77,7 @@
             this.tbPost3 = new System.Windows.Forms.TextBox();
             this.tbYear3 = new System.Windows.Forms.TextBox();
             this.Bdelete = new System.Windows.Forms.Button();
+            this.listBox1 = new System.Windows.Forms.ListBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -465,6 +466,7 @@
             this.groupBox5.TabIndex = 0;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Вывод элементов";
+            this.groupBox5.Enter += new System.EventHandler(this.groupBox5_Enter);
             // 
             // lbOutput
             // 
@@ -589,11 +591,20 @@
             this.Bdelete.UseVisualStyleBackColor = true;
             this.Bdelete.Click += new System.EventHandler(this.Bdelete_Click);
             // 
+            // listBox1
+            // 
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.Location = new System.Drawing.Point(399, 0);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(178, 4);
+            this.listBox1.TabIndex = 3;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(773, 464);
+            this.Controls.Add(this.listBox1);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox5);
@@ -670,5 +681,6 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.CheckBox cbOutputAll;
         private System.Windows.Forms.GroupBox groupBox7;
+        private System.Windows.Forms.ListBox listBox1;
     }
 }

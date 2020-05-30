@@ -185,7 +185,7 @@
             this.groupBox3.Controls.Add(this.panel2);
             this.groupBox3.Controls.Add(this.panel1);
             this.groupBox3.Controls.Add(this.button3);
-            this.groupBox3.Location = new System.Drawing.Point(171, 125);
+            this.groupBox3.Location = new System.Drawing.Point(171, 119);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(231, 93);
             this.groupBox3.TabIndex = 8;
@@ -382,7 +382,7 @@
             this.groupBox5.Controls.Add(this.radioButton7);
             this.groupBox5.Controls.Add(this.textBox12);
             this.groupBox5.Controls.Add(this.label8);
-            this.groupBox5.Location = new System.Drawing.Point(171, 19);
+            this.groupBox5.Location = new System.Drawing.Point(171, 12);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.Size = new System.Drawing.Size(390, 102);
             this.groupBox5.TabIndex = 9;
@@ -422,6 +422,7 @@
             this.radioButton7.TabStop = true;
             this.radioButton7.Text = "Записать";
             this.radioButton7.UseVisualStyleBackColor = true;
+            this.radioButton7.CheckedChanged += new System.EventHandler(this.radioButton7_CheckedChanged);
             // 
             // textBox12
             // 
@@ -429,7 +430,7 @@
             this.textBox12.Name = "textBox12";
             this.textBox12.Size = new System.Drawing.Size(366, 20);
             this.textBox12.TabIndex = 9;
-            this.textBox12.Text = "C:\\Users\\Андрей\\source\\repos\\lab12Csharp\\znak.txt";
+            this.textBox12.Text = "znak.txt";
             this.textBox12.TextChanged += new System.EventHandler(this.textBox12_TextChanged);
             // 
             // label8
@@ -461,7 +462,7 @@
             // 
             // textBox13
             // 
-            this.textBox13.Location = new System.Drawing.Point(9, 140);
+            this.textBox13.Location = new System.Drawing.Point(9, 141);
             this.textBox13.Name = "textBox13";
             this.textBox13.Size = new System.Drawing.Size(105, 20);
             this.textBox13.TabIndex = 10;
@@ -503,7 +504,7 @@
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(304, 133);
+            this.button6.Location = new System.Drawing.Point(304, 138);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(75, 23);
             this.button6.TabIndex = 12;
